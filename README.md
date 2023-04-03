@@ -64,8 +64,40 @@ Open after installation
 </p>
 <p>
 Next we will add MYSQL 5.5 (creditals are later asked to be created)
-  Default Username: Root
-  Password: Password1
+  
+  (Default Username: Root)
+  
+  (Password: Password1)
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/QZ04EH4.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Add all simple versions of x86 PHP up until 7.3:
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/Pnaf84m.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Fix any failures if required.
+
+Install PHP Version 7.3.8 (or any other version if necessary, archives).
+
+Install Microsoft Visual C++ 2009 Redistributable Package (if necessary).
+
+Install PHP Manager 1.5.0 for IIS 10:
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/XhzCAtH.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 </p>
 <br />
 
@@ -76,4 +108,3 @@ Next we will add MYSQL 5.5 (creditals are later asked to be created)
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 </p>
 <br />
-
