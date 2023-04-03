@@ -83,8 +83,6 @@ Add all simple versions of x86 PHP up until 7.3:
 <img src="https://i.imgur.com/Pnaf84m.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Fix any failures if required.
-
 Install PHP Version 7.3.8 (or any other version if necessary, archives).
 
 Install Microsoft Visual C++ 2009 Redistributable Package (if necessary).
@@ -99,7 +97,7 @@ Install PHP Manager 1.5.0 for IIS 10:
 <p>
 Install osTicket v1.15.8
 
-Download osTicket (download from within lab files: link).
+Download osTicket (Downloaded through lab files).
 
 Extract and copy the “upload” folder INTO c:\inetpub\wwwroot:
 </p>
@@ -140,7 +138,7 @@ Extract and copy the “upload” folder INTO c:\inetpub\wwwroot:
 	Go back to IIS, sites -> Default -> osTicket.
 </p>
 <p>
-	Double-click PHP Manager:
+	Double-click on PHP Manager:
 </p>
 <p>
 	<img src="https://i.imgur.com/LFKo5Hs.png" height="75%" width="100%" alt="PHP Manager"/>
@@ -201,7 +199,7 @@ Extract and copy the “upload” folder INTO c:\inetpub\wwwroot:
 </p>
 <br />
 <br />
-<h3 align="center">Continue Setting up osTicket in the browser (click Continue)</h3>
+<h3 align="center">Finish setting up osTicket in the browser (click Continue)</h3>
 <br />
 <p>
 	Name Helpdesk.
@@ -211,7 +209,6 @@ Extract and copy the “upload” folder INTO c:\inetpub\wwwroot:
 </p>
 <p>
 	<img src="https://i.imgur.com/rvMvlNC.png" height="75%" width="100%" alt="continue osTicket setup"/>
-	<img src="https://i.imgur.com/YszhIpl.png" height="75%" width="100%" alt="osTicket settings"/>
 </p>
 <br />
 <br />
@@ -237,7 +234,7 @@ Extract and copy the “upload” folder INTO c:\inetpub\wwwroot:
 </p>
 <br />
 <br />
-<h3 align="center">Continue Setting up osTicket in the browser</h3>
+<h3 align="center">Finish setting up osTicket in the browser</h3>
 <br />
 <p>MySQL Database: osTicket</p>
 <p>
@@ -250,7 +247,7 @@ Extract and copy the “upload” folder INTO c:\inetpub\wwwroot:
 	<img src="https://i.imgur.com/akDyber.png" height="75%" width="100%" alt="setting up osTicket cont'd"/>
 </p>
 <p>Click “Install Now!”</p>
-<p>Congratulations, hopefully it is installed with no errors!</hp>
+<p>Awesome, it should now be installed with no errors!</hp>
 <p>
 	<img src="https://i.imgur.com/J5omRoE.png" height="75%" width="100%" alt="installation complete"/>
 </p>
@@ -280,8 +277,6 @@ Extract and copy the “upload” folder INTO c:\inetpub\wwwroot:
 <br />
 <br />
 <p>
-	And there you have it! I hope this tutorial helped you with installing osTicket.
+	This is how you install osTicket. It is a great way to practice your own mock help desk. Thank you for anyone that has made it scrolling down this far.
 </p>
-<p>
-	And now you can practice having your own mock help desk locally to prepare you for a postion in a help desk or IT support position.
-</p>
+
