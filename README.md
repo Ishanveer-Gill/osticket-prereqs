@@ -27,7 +27,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - Heidi SQL
 
 <h2>Installation Steps</h2>
-Hi! Welcome to my very first tutorial, first we will create a virtual machine using Microsoft Azure portal. A virual machine is a remote computer which you can access by using the Remote Desktop Connection app. It is best to use a virtual machine to protect our physical machine in case something breaks. First we will create a resource group and title it "osTicket". Afterwards create a virtual machine that has 2-4 CPUs. 
+First we will create a virtual machine using Microsoft Azure portal. A virual machine is a remote computer which you can access by using the Remote Desktop Connection app. It is best to use a virtual machine to protect our physical machine in case something breaks. First we will create a resource group and title it "osTicket". Afterwards create a virtual machine that has 2-4 CPUs. 
 <p>
 <img src="https://i.imgur.com/qsISkUj.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
