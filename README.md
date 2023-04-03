@@ -22,14 +22,12 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>List of Prerequisites</h2>
 
-- Item 1
-- Item 2
-- Item 3
-- Item 4
-- Item 5
+- Azure Virtual Machine
+- osTicket Installation files
+- Heidi SQL
 
 <h2>Installation Steps</h2>
-
+Hi! Welcome to my very first tutorial, first we will create a virtual machine using Microsoft Azure portal. A virual machine is a remote computer which you can access by using the Remote Desktop Connection app. It is best to use a virtual machine to protect our physical machine in case something breaks. First we will create a resource group and title it "osTicket". Afterwards create a virtual machine 2-4 CPUs. 
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
