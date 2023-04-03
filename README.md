@@ -25,6 +25,8 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - Azure Virtual Machine
 - osTicket Installation files
 - Heidi SQL
+- Web Platform Installer
+- 
 
 <h2>Installation Steps</h2>
 First we will create a Virtual Machine using Microsoft Azure portal. A Virual Machine is a remote computer which you can access by using the Remote Desktop Connection app. It is best to use a Virtual Machine to protect our physical machine in case something breaks. First we will create a resource group and title it "osTicket". Afterwards create a Virtual Machine that has 2-4 CPUs. 
