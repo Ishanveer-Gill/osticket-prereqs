@@ -109,23 +109,179 @@ Extract and copy the “upload” folder INTO c:\inetpub\wwwroot:
 <img src="https://i.imgur.com/lPM2vhi.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
   <img src="https://i.imgur.com/zymNVVS.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
 
 <p>
-<img src="https://i.imgur.com/QZ04EH4.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+	Within c:\inetpub\wwwroot, Rename “upload” to “osTicket”:
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+	<img src="https://i.imgur.com/pDikkgq.png" height="75%" width="100%" alt="rename to osTicket"/>
 </p>
 <br />
-
+<br />
+<h3 align="center">Reload IIS (Open IIS, Stop and Start the server)</h3>
+<br />
 <p>
-<img src="https://i.imgur.com/QZ04EH4.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+	Go to sites -> Default -> osTicket:
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+	<img src="https://i.imgur.com/QeWNlG3.png" height="75%" width="100%" alt="default osTicket"/>
+</p>
+<p>
+	On the right, click “Browse *:80”:
+</p>
+<p>
+	<img src="https://i.imgur.com/3iXhNbi.png" height="75%" width="100%" alt="port 80"/>
 </p>
 <br />
+<br />
+<h3 align="center">Enable Extensions in IIS: Note that some extensions are not enabled</h3>
+<br />
+<p>
+	Go back to IIS, sites -> Default -> osTicket.
+</p>
+<p>
+	Double-click PHP Manager:
+</p>
+<p>
+	<img src="https://i.imgur.com/LFKo5Hs.png" height="75%" width="100%" alt="PHP Manager"/>
+</p>
+<p>
+	Click “Enable or disable an extension”.
+</p>
+<p>
+	Enable: php_imap.dll.
+</p>
+<p>
+	Enable: php_intl.dll.
+</p>
+<p>
+	Enable: php_opcache.dll:
+</p>
+<p>
+	<img src="https://imgur.com/a/nrQo0kz" height="75%" width="100%" alt="Disk Sanitization Steps"/>
+</p>
+<br />
+<br />
+<h3 align="center">Refresh the osTicket site in your browser, observe the changes</h3>
+<br />
+<p>
+	<img src="https://i.imgur.com/6iSNd4H.png" height="75%" width="100%" alt="osTicket change"/>
+</p>
+<br />
+<br />
+<h3 align="center">Rename</h3>
+<br />
+<p>
+	From: C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php.
+</p>
+<p>
+	To: C:\inetpub\wwwroot\osTicket\include\ost-config.php:
+</p>
+<p>
+	<img src="https://i.imgur.com/TEw71SD.png" height="75%" width="100%" alt="ost-config"/>
+</p>
+<br />
+<br />
+<h3 align="center">Assign Permissions: ost-config.php</h3>
+<br />
+<p>
+	Disable inheritance -> Remove All:
+</p>
+<p>
+	<img src="https://i.imgur.com/1QtRWEF.png" height="75%" width="100%" alt="disable inheritance"/>
+</p>
+<p>
+	New Permissions -> Everyone -> All:
+</p>
+<p>
+	<img src="https://i.imgur.com/YzsMXNX.png" height="75%" width="100%" alt="new permissions"/>
+</p>
+<p>
+	<img src="https://i.imgur.com/k7x9yGR.png" height="75%" width="100%" alt="new permissions - all"/>
+</p>
+<br />
+<br />
+<h3 align="center">Continue Setting up osTicket in the browser (click Continue)</h3>
+<br />
+<p>
+	Name Helpdesk.
+</p>
+<p>
+	Default email (receives email from customers):
+</p>
+<p>
+	<img src="https://i.imgur.com/rvMvlNC.png" height="75%" width="100%" alt="continue osTicket setup"/>
+	<img src="https://i.imgur.com/YszhIpl.png" height="75%" width="100%" alt="osTicket settings"/>
+</p>
+<br />
+<br />
+<h3 align="center">Download and Install HeidiSQL</h3>
+<br />
+<p>
+	<img src="https://i.imgur.com/AEg0b2P.png" height="75%" width="100%" alt="download HeidiSQL"/>
+</p>
+<p>
+	Create a new session, root/Password1.
+</p>
+<p>
+	Connect to the session:
+</p>
+<p>
+	<img src="https://i.imgur.com/9t51ApR.png" height="75%" width="100%" alt="create sessions"/>
+</p>
+<p>
+	Create a database called “osTicket”:
+</p>
+<p>
+	<img src="https://i.imgur.com/vXzmQqg.png" height="75%" width="100%" alt="create database"/>
+</p>
+<br />
+<br />
+<h3 align="center">Continue Setting up osTicket in the browser</h3>
+<br />
+<p>MySQL Database: osTicket</p>
+<p>
+	MySQL Username: root
+</p>
+<p>
+	MySQL Password: Password1:
+</p>
+<p>
+	<img src="https://i.imgur.com/akDyber.png" height="75%" width="100%" alt="setting up osTicket cont'd"/>
+</p>
+<p>Click “Install Now!”</p>
+<p>Congratulations, hopefully it is installed with no errors!</hp>
+<p>
+	<img src="https://i.imgur.com/J5omRoE.png" height="75%" width="100%" alt="installation complete"/>
+</p>
+<br />
+<br />
+<h3 align="center">Clean up</h3>
+<br />
+<p>
+	Delete: C:\inetpub\wwwroot\osTicket\setup:
+</p>
+<p>
+	<img src="https://i.imgur.com/eg0ZPG3.png" height="75%" width="100%" alt="clean up"/>
+</p>
+<p>
+	Set Permissions to “Read” only: C:\inetpub\wwwroot\osTicket\include\ost-config.php:
+</p>
+<p>
+	<img src="https://i.imgur.com/n6k46XL.png" height="75%" width="100%" alt="permissions"/>
+</p>
+<br />
+<br />
+<h3 align="center">Login to the osTicket Admin Panel (http://localhost/osTicket/scp/login.php)</h3>
+<br />
+<p>
+	<img src="https://i.imgur.com/zklvv8K.png" height="75%" width="100%" alt="admin panel"/>
+</p>
+<br />
+<br />
+<p>
+	And there you have it! I hope this tutorial helped you with installing osTicket.
+</p>
+<p>
+	And now you can practice having your own mock help desk locally to prepare you for a postion in a help desk or IT support position.
+</p>
