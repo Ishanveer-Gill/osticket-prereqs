@@ -269,7 +269,7 @@ Extract and copy the “upload” folder INTO c:\inetpub\wwwroot:
 <h3 align="center">Login to the osTicket Admin Panel (http://localhost/osTicket/scp/login.php)</h3>
 <br />
 <p>
-	<img src="https://i.imgur.com/zklvv8K.png" height="75%" width="100%" alt="admin panel"/>
+	<img src="https://i.imgur.com/jaDTHVy.png" height="75%" width="100%" alt="admin panel"/>
 </p>
 <br />
 <br />
